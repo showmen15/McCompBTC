@@ -59,6 +59,14 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="TableTestowa.sql" />
+    <Build Include="RegisterUsers.sql" />
+    <Build Include="RegisterUsersEmails.sql" />
+    <Build Include="RegisterUsersPhones.sql" />
+    <Build Include="Transactions.sql" />
+    <Build Include="Wallet.sql" />
+    <Build Include="ValidationCodes.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DatabaseBTC.refactorlog" />
   </ItemGroup>
 </Project>
