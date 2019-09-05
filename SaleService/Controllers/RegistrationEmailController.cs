@@ -38,8 +38,10 @@ namespace SaleService.Controllers
 
             Wallet wallet = new Wallet();
             wallet.AdressName = string.Format("Wallet adress for: {0}", validationCodes.IdCode);
+            wallet.IdCode = validationCodes.IdCode;
 
-
+            databaseBTCContext.Wallet.Add(wallet);
+            databaseBTCContext.SaveChanges();
 
             System.Net.Http.HttpClient httpClient = new System.Net.Http.HttpClient();
             httpClient.BaseAddress = new Uri("http://127.0.0.1:4005");

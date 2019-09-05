@@ -19,7 +19,7 @@ namespace SaleService.Controllers
             WalletInfo walletInfo = null;
 
             DatabaseBTCContext databaseBTCContext = new DatabaseBTCContext();
-            Wallet wallet = databaseBTCContext.Wallet.Where(ww => ww.IdWallet == IdCode).Single();
+            Wallet wallet = databaseBTCContext.Wallet.FirstOrDefault(ww => ww.IdCode == IdCode);
 
             if(wallet != null)
             {
