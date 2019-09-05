@@ -69,7 +69,4 @@
   <ItemGroup>
     <RefactorLog Include="DatabaseBTC.refactorlog" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="DatabaseBTC.publish.xml" />
-  </ItemGroup>
 </Project>
