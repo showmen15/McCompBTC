@@ -1,0 +1,53 @@
+{
+  "x-generator": "NSwag v13.0.6.0 (NJsonSchema v10.0.23.0 (Newtonsoft.Json v11.0.0.0))",
+  "swagger": "2.0",
+  "info": {
+    "title": "Email",
+    "version": "1.0.0"
+  },
+  "host": "127.0.0.1:4005",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/api/Email": {
+      "post": {
+        "tags": [
+          "Email"
+        ],
+        "operationId": "Email_Post",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "EmailTo",
+            "in": "query",
+            "x-nullable": true
+          },
+          {
+            "type": "string",
+            "name": "EmailCc",
+            "in": "query",
+            "x-nullable": true
+          },
+          {
+            "type": "string",
+            "name": "Titel",
+            "in": "query",
+            "x-nullable": true
+          },
+          {
+            "type": "string",
+            "name": "Body",
+            "in": "query",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}

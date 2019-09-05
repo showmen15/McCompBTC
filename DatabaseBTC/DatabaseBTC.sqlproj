@@ -64,7 +64,7 @@
     <Build Include="RegisterUsersPhones.sql" />
     <Build Include="Transactions.sql" />
     <Build Include="Wallet.sql" />
-    <Build Include="ValidationCodes.sql" />
+    <None Include="ValidationCodes.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DatabaseBTC.refactorlog" />

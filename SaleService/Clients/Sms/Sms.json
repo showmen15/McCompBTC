@@ -1,0 +1,42 @@
+{
+  "x-generator": "NSwag v13.0.6.0 (NJsonSchema v10.0.23.0 (Newtonsoft.Json v11.0.0.0))",
+  "swagger": "2.0",
+  "info": {
+    "title": "Sms",
+    "version": "1.0.0"
+  },
+  "host": "127.0.0.1:4010",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/api/SmS": {
+      "post": {
+        "tags": [
+          "SmS"
+        ],
+        "operationId": "SmS_Post",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "PhoneNumber",
+            "in": "query",
+            "format": "int64",
+            "x-nullable": false
+          },
+          {
+            "type": "string",
+            "name": "Text",
+            "in": "query",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
