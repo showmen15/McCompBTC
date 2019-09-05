@@ -49,4 +49,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="IdCode" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="d5f73b7e-ad58-40b0-bccd-3b84a93a5a9e" ChangeDateTime="09/05/2019 09:08:37">
+    <Property Name="ElementName" Value="[dbo].[FK_ValidationCodes_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ValidationCodes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ValidationCodes_RegisterUsers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c7e658f4-2a89-4890-b973-8971b86d2cc1" ChangeDateTime="09/05/2019 09:38:45">
+    <Property Name="ElementName" Value="[dbo].[Wallet].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Wallet]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AdressName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d54f8e07-15da-4e1a-bd25-2e49b6bd5d29" ChangeDateTime="09/05/2019 09:46:02">
+    <Property Name="ElementName" Value="[dbo].[Wallet].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Wallet]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdCode" />
+  </Operation>
 </Operations>
