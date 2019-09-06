@@ -13,12 +13,18 @@ namespace SaleService.Controllers
     [ApiController]
     public class WalletController : ControllerBase
     {
+        private readonly DatabaseBTCContext databaseBTCContext;
+
+        public WalletController(DatabaseBTCContext context)
+        {
+            databaseBTCContext = context;
+        }
+
         [HttpPost]
         public WalletInfo Get([FromBody] long IdCode)
         {
             WalletInfo walletInfo = null;
 
-            DatabaseBTCContext databaseBTCContext = new DatabaseBTCContext();
             Wallet wallet = databaseBTCContext.Wallet.FirstOrDefault(ww => ww.IdCode == IdCode);
 
             if(wallet != null)

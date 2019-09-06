@@ -7,9 +7,9 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DatabaseBTC", "DatabaseBTC\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailService", "EmailService\EmailService.csproj", "{85345793-3C4A-49FF-A479-2EBFBA6317C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsService", "SmsService\SmsService.csproj", "{BD15AA0D-F817-4F2F-BA1F-612A85743DB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsService", "SmsService\SmsService.csproj", "{BD15AA0D-F817-4F2F-BA1F-612A85743DB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleService", "SaleService\SaleService.csproj", "{E638AB06-17A6-4A2A-B1D3-A6A7709E8700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleService", "SaleService\SaleService.csproj", "{E638AB06-17A6-4A2A-B1D3-A6A7709E8700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

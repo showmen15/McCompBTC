@@ -14,13 +14,16 @@ namespace SaleService.Controllers
     [ApiController]
     public class RegistrationEmailController : ControllerBase
     {
+        private readonly DatabaseBTCContext databaseBTCContext;
 
+        public RegistrationEmailController(DatabaseBTCContext context)
+        {
+            databaseBTCContext = context;
+        }
 
         [HttpPost]
         public void Post([FromBody] UserEmail mail)
         {
-            DatabaseBTCContext databaseBTCContext = new DatabaseBTCContext();
-
             RegisterUsers registerUsers = new RegisterUsers();
             registerUsers.Name = mail.Name;
             registerUsers.Surname = mail.Surname;
