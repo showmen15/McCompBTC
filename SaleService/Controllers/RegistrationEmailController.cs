@@ -46,6 +46,11 @@ namespace SaleService.Controllers
             databaseBTCContext.Wallet.Add(wallet);
             databaseBTCContext.SaveChanges();
 
+            sendEmail(registerUsers, validationCodes);
+        }
+
+        private void sendEmail(RegisterUsers registerUsers, ValidationCodes validationCodes)
+        {
             System.Net.Http.HttpClient httpClient = new System.Net.Http.HttpClient();
             httpClient.BaseAddress = new Uri("http://127.0.0.1:4005");
             EmailClient emailClient = new EmailClient(httpClient);
